@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.assig1 , .assig2 ,.assig3 ,.assig4 , .assig5 ,.assig6 ,.assig7 ,.assig8{
+    margin: 20px auto;
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+}
+.assig1 div.main.red{
+    color: red;
+}
+.assig2 .parent div:nth-child(2){
+    color: red;
+}
+.assig3 .parent > div:only-child{
+    color: red;
+}
+.assig4 > div[title]:not(.no-need){
+    color: red;
+}
+.assig5 div:nth-child(2) p + div{
+    color: red;
+}
+.assig6  div:not(.no-need) div:nth-last-of-type(2){
+    color: red;
+}
+.assig7 div:first-child div:nth-child(5){
+    color: red;
+}
+.assig8 :not(:nth-child(1),:nth-last-child(1) , h3)   {
+    color: red;
+}

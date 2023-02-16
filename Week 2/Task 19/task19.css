@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.assig1{
+    font-size: 20px;
+}
+@media print {
+    .assig1{
+        font-size: 40px;
+    }
+}
+.assig2 div{
+    background-color: #EEE;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.assig2 h3{
+    color: rgb(0 150 136);
+}
+.assig2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* small */
+@media (min-width: 300px) and (max-width:599px){
+    .assig2 div{
+        width: calc(100% - 5px);
+    }
+    .assig2 div h3{
+        color: black;
+    }
+}
+/* medium */
+@media (min-width: 600px){
+    .assig2 div{
+        width: calc(50% - 10px);
+    }
+    .assig2 div h3{
+        color: red;
+    }
+    .assig2 div p{
+        font-size: 20px;
+    }
+}
+/* large */
+@media (min-width: 800px){
+    .assig2 div{
+        width: calc(25% - 5px);
+    }
+    .assig2 div h3{
+        color: #009688;
+    }
+}
+.assig3 div{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+.assig3 div h3{
+    text-align: center;
+    color: #009688;
+}
+.assig3 div p{
+    text-align: center;
+}
+.assig3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* small */
+@media (min-width: 300px) and (max-width:599px){
+    .assig3 div{
+        width: calc(100% - 5px);
+    }
+    .assig3 div h3{
+        color: black;
+    }
+}
+/* medium */
+@media (min-width: 600px){
+    .assig3 div h3{
+        color: red;
+    }
+    .assig3 div p{
+        font-size: 20px;
+    }
+    .assig3 .one2{
+        width: calc(100% - 5px);
+    }
+    .assig3 .two2,
+    .assig3 .three2,
+    .assig3 .four2{
+        width: calc(33.5% - 5px);
+    }
+}
+/* large */
+@media (min-width: 800px){
+    .assig3 div h3{
+        color: #009688;
+    }
+    .assig3:first-child{
+        width: calc(100% - 5px);
+    }
+    .assig3 .two2,
+    .assig3 .three2{
+        width: calc(50% - 5px);
+    }
+    .assig3 .four2{
+        width: calc(100% - 5px);
+    }
+}
